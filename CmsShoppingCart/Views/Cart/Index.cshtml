@@ -71,8 +71,32 @@
                 </td>
 
             </tr>
-
         </table>
+        <div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rateModal">
+                Rate Us
+            </button>
+        </div>
+
+        <div class="modal fade" id="rateModal" tabindex="-1" aria-labelledby="rateModalLabel" aria-hidden="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="rateModalLabel">Rate Content</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">rate</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/RateContent" method="post">
+                            <input type="hidden" name="contentId" value="123" />
+                            <label for="rating">Rating:</label>
+                            <input type="number" name="rating" min="1" max="5" />
+                            <button type="submit" id="submitRating">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     
 }
@@ -96,8 +120,28 @@ else
                 })
                
             });
-
         });
+        $(document).ready(function () {
+            $('#ratingInput').rating();
+
+            $('#submitRating').click(function () {
+                var contentId = @Model.CartItems; 
+                var rating = $('#ratingInput').val();
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/cart/RateContent', // Replace with your controller action URL
+                    data: { contentId: contentId, rating: rating },
+                    success: function (data) {
+                        // Handle success (e.g., update average rating and number of ratings on the page)
+                    },
+                    error: function (error) {
+                        // Handle error
+                    }
+                });
+            });
+        });
+
     </script>
 
 }

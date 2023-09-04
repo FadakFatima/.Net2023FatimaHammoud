@@ -117,7 +117,7 @@ namespace CmsShoppingCart.Controllers
             if (ModelState.IsValid)
             {
                 appUser.Email = user.Email;
-                if (user == null)
+                if (user.Password != null)
                 {
                     appUser.PasswordHash = passwordHasher.HashPassword(appUser, user.Password);
                 }

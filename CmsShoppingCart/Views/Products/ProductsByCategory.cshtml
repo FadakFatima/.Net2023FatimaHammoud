@@ -29,8 +29,7 @@
                 @item.Price.ToString("C2")
             </p>
             <p>
-                <a asp-controller="Cart" asp-action="Add"
-                   asp-route-id="@item.Id" data-id="@item.Id" class="btn btn-primary addToCart">
+                <a asp-controller="Cart" asp-action="Add" asp-route-id="@item.Id" class="btn btn-primary">
                     Add to cart
                 </a>
             </p>
@@ -41,7 +40,8 @@
     {
         <div class="d-flex w-100 justify-content-center">
             <pagination page-count="@ViewBag.TotalPages"
-                        page-target="/products/@ViewBag.CategorySlug" page-number="@ViewBag.PageNumber"
+                        page-target="/products/@ViewBag.CategorySlug"
+                        page-number="@ViewBag.PageNumber"
                         page-range="@ViewBag.PageRange"></pagination>
         </div>
     }
@@ -59,6 +59,7 @@
                 ajaxDiv.removeClass("d-none");
 
                 let id = $(this).data("id");
+
 
                 $.get('/cart/add/' + id, {}, function (data) {
                     $("div.smallcart").html(data);

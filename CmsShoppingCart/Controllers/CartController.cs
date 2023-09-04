@@ -1,6 +1,8 @@
 ﻿using CmsShoppingCart.Infrastructure;
 using CmsShoppingCart.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,6 +12,8 @@ namespace CmsShoppingCart.Controllers
     public class CartController : Controller
     {
 
+
+        private readonly UserManager<AppUser> userManager;
         private readonly CmsShoppingCartContext context;
 
         public CartController(CmsShoppingCartContext context)
@@ -142,7 +146,33 @@ namespace CmsShoppingCart.Controllers
             return Ok();
 
         }
-       
+       /*  [HttpPost]
+       public IActionResult RateContent(int contentId, int rating)
+        {
+            var userId = @ViewBag.id.AppUser; // Implement a way to get the current user's ID
+            var existingRating = context.Ratings.FirstOrDefault(r => r.ContentId == contentId && r.UserId == userId);
+
+            if (existingRating != null)
+            {
+                existingRating.RatingValue = rating;
+            }
+            else
+            {
+                var newRating = new Rating
+                {
+                    UserId = userId,
+                    ContentId = contentId,
+                    RatingValue = rating
+                };
+                context.Ratings.Add(newRating);
+            }
+
+            context.SaveChanges();
+
+            return RedirectToAction("index");
+        }*/
+
+
 
     }
 }
