@@ -8972,11 +8972,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP i5\\source\\repos\\CmsShoppingCart1\\CmsShoppingCart\\CmsShoppingCart.csproj",
+      "projectUniqueName": "C:\\Users\\HP i5\\Desktop\\training\\CmsShoppingCart\\CmsShoppingCart\\CmsShoppingCart.csproj",
       "projectName": "CmsShoppingCart",
-      "projectPath": "C:\\Users\\HP i5\\source\\repos\\CmsShoppingCart1\\CmsShoppingCart\\CmsShoppingCart.csproj",
+      "projectPath": "C:\\Users\\HP i5\\Desktop\\training\\CmsShoppingCart\\CmsShoppingCart\\CmsShoppingCart.csproj",
       "packagesPath": "C:\\Users\\HP i5\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP i5\\source\\repos\\CmsShoppingCart1\\CmsShoppingCart\\obj\\",
+      "outputPath": "C:\\Users\\HP i5\\Desktop\\training\\CmsShoppingCart\\CmsShoppingCart\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP i5\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sjxAoOdU8aKVCGi5QLgBW81j/fKlpBerF7RKU1gKixKWclYFT7fCD4ZldNByF9hv6ATftH84mJtv7wO9VLgyNw==",
+  "dgSpecHash": "8GuhRk12Wi9Oemurgt/8Vi9F4YO+dok7VyJ+KADPogUtkNpGWFdoE8YnHq7mHhZ1JLG3KMTPu4kqGj3Qlzv7IA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP i5\\source\\repos\\CmsShoppingCart1\\CmsShoppingCart\\CmsShoppingCart.csproj",
+  "projectFilePath": "C:\\Users\\HP i5\\Desktop\\training\\CmsShoppingCart\\CmsShoppingCart\\CmsShoppingCart.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP i5\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.32\\microsoft.aspnetcore.cryptography.internal.3.1.32.nupkg.sha512",
     "C:\\Users\\HP i5\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.32\\microsoft.aspnetcore.cryptography.keyderivation.3.1.32.nupkg.sha512",
